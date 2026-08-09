@@ -6,14 +6,15 @@ import tseslint from 'typescript-eslint';
 import globals from 'globals';
 
 export default defineConfig({
-  files: ['**/*.{js,ts}'],
+    files: ['**/*.{js,ts}'],
 
-  extends: [
-    js.configs.recommended,
-    tseslint.configs.recommended,
-  ],
+    extends: [js.configs.recommended, tseslint.configs.recommended],
 
-  languageOptions: {
-    globals: globals.node,
-  },
+    languageOptions: {
+        globals: globals.node,
+    },
+    rules: {
+        //'no-console':'error',
+        //'dot-notation':'error',
+    },
 });
