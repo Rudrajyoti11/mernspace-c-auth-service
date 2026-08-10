@@ -11,8 +11,9 @@
         "url": "git+https://github.com/Rudrajyoti11/mernspace-c-auth-service.git"
     },
     "license": "ISC",
-    "author": "Rudrajyoti Roy <rudrajyotiroy11@gmail.com>",
-    "type": "module",
+    "author": "Rudrajyoti Roy ",
+    "type": "commonjs",
+
     "main": "index.js",
     "scripts": {
         "dev": "node src/server.js",
@@ -31,7 +32,9 @@
         "husky": "^9.1.7",
         "lint-staged": "^17.3.0",
         "prettier": "3.9.6",
+
         "tsx": "^4.23.12",
+
         "typescript": "^5.9.3",
         "typescript-eslint": "^8.66.0"
     },
@@ -43,5 +46,6 @@
     },
     "dependencies": {
         "dotenv": "^17.4.2"
+
     }
 }
