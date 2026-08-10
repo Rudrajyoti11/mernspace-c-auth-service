@@ -1,5 +1,3 @@
-function welcome(name: string) {
-    return name;
-}
+import { Config } from './config/index.js';
 
-welcome('Rudra');
+console.log(Config.PORT);
