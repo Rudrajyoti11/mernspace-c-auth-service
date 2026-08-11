@@ -7,18 +7,19 @@ import globals from 'globals';
 
 export default defineConfig(
     {
-    ignores: ['dist/**', 'node_modules/**'],
-  },
+        ignores: ['dist/**', 'node_modules/**'],
+    },
     {
-    files: ['**/*.{js,ts}'],
+        files: ['**/*.{js,ts}'],
 
-    extends: [js.configs.recommended, tseslint.configs.recommended],
+        extends: [js.configs.recommended, tseslint.configs.recommended],
 
-    languageOptions: {
-        globals: globals.node,
+        languageOptions: {
+            globals: globals.node,
+        },
+        rules: {
+            //'no-console':'error',
+            //'dot-notation':'error',
+        },
     },
-    rules: {
-        //'no-console':'error',
-        //'dot-notation':'error',
-    },
-});
+);
