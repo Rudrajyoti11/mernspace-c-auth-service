@@ -35,12 +35,15 @@
         // Recommended Options
         "strict": true,
         "jsx": "react-jsx",
-        "verbatimModuleSyntax": true,
+        "verbatimModuleSyntax": false,
         "isolatedModules": true,
         "noUncheckedSideEffectImports": true,
         "moduleDetection": "force",
         "skipLibCheck": true,
-        "moduleResolution": "NodeNext"
+        "moduleResolution": "NodeNext",
+        "esModuleInterop": true,
+
     },
-    "include": ["src/**/*.ts"]
+     "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
 }

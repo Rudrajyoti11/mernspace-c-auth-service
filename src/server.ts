@@ -1,9 +1,14 @@
-import { Config } from './config/index.js';
+import app from './app';
+import { Config } from './config';
 
-console.log(Config.PORT);
+const startServer = () => {
+    const PORT = Config.PORT;
+    try {
+        app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
+    } catch (err) {
+        console.log(err);
+        process.exit(1);
+    }
+};
 
-function welcome(name: string) {
-    return name;
-}
-
-welcome('Rudra');
+startServer();
