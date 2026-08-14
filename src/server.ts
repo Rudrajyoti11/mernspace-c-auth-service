@@ -1,10 +1,14 @@
 import app from './app';
 import { Config } from './config';
+import logger from './config/logger';
 
 const startServer = () => {
     const PORT = Config.PORT;
     try {
-        app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
+        app.listen(PORT, () => {
+            logger.error('test error');
+            logger.info('Server Listening on port', { port: PORT });
+        });
     } catch (err) {
         console.log(err);
         process.exit(1);
