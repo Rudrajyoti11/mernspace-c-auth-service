@@ -7,7 +7,12 @@ import globals from 'globals';
 
 export default defineConfig(
     {
-        ignores: ['dist/**', 'node_modules/**','eslint.config.js','jest.config.js'],
+        ignores: [
+            'dist/**',
+            'node_modules/**',
+            'eslint.config.js',
+            'jest.config.js',
+        ],
     },
     {
         files: ['**/*.{js,ts}'],
@@ -20,7 +25,7 @@ export default defineConfig(
         rules: {
             //'no-console':'error',
             //'dot-notation':'error',
-            '@typescript-eslint/no-misused-promises':'off',
+            '@typescript-eslint/no-misused-promises': 'off',
         },
     },
 );
